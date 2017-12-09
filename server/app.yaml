@@ -1,0 +1,17 @@
+runtime: go
+api_version: go1
+
+handlers:
+- url: /js/app.js
+  static_files: public/js/app.js
+  upload: public/js/app\.js
+- url: /.*
+  script: _go_app
+
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
+- ^(.*/)?.*_test\.go$

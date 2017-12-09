@@ -1,0 +1,30 @@
+{
+  "name": "react-go-gae-example",
+  "repository": "https://github.com/remko/react-go-gae-example",
+  "author": "Remko Tronçon <remko@el-tramo.be> (https://el-tramo.be/)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "es6-promise": "^4.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack --bail",
+    "install-deps": "yarn && cd server && GOPATH=$PWD/../.go go get github.com/robertkrimen/otto && cd ..",
+    "watch": "webpack --watch",
+    "dev-server": "webpack-dev-server --inline --progress --colors -d --host 0.0.0.0 --port 8081",
+    "dev-appserver": "cd server && GOPATH=$PWD/../.go dev_appserver.py ."
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
