@@ -1,3 +1,5 @@
+**⚠️ App Engine has evolved to a new runtime since this project was created. Some of the principles are still applicable, but not everything should serve as an example on how to do things today**
+
 # [React+Go (Google App Engine Standard) Example](https://el-tramo.be/react-go-gae-example)
 
 An example of a universal/isomorphic [React](https://facebook.github.io/react/) 
